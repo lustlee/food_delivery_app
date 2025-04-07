@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/pages/bottomnav.dart';
+import 'package:food_delivery_app/pages/food_detail.dart';
 import 'package:food_delivery_app/pages/home.dart';
 import 'package:food_delivery_app/pages/onboarding.dart';
 
@@ -32,7 +34,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Home(),
+      home: BottomNav(),
     );
   }
 }

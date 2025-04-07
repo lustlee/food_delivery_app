@@ -7,6 +7,7 @@ class FoodItems extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       scrollDirection: Axis.horizontal,
+      padding: EdgeInsets.zero,
       children: [
         SizedBox(width: 10),
         Container(
