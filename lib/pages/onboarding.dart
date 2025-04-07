@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/service/widget_support.dart';
 
 class Onboarding extends StatefulWidget {
   const Onboarding({super.key});
@@ -19,35 +20,28 @@ class _OnboardingState extends State<Onboarding> {
               const SizedBox(height: 120),
               Center(
                 child: Image.asset(
-                  'assets/images/pan.png',
-                  height: 300,
-                  width: 300,
+                  'assets/images/onboard.png',
+                  height: 350,
+                  width: 350,
                   fit: BoxFit.cover,
                 ),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 20),
               Text(
-                'Discover your food',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 26,
-                  fontWeight: FontWeight.bold,
-                ),
+                'The Fastest\nFood Delivery',
+                textAlign: TextAlign.center,
+                style: AppWidget.HeadlineTextFieldStyle(),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.only(left: 20, right: 20),
                 child: Text(
-                  'Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque 1500s',
+                  'Craving sometimes delicious?\n Order now and get your favorite\n delivered fast!',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.black54,
-                    fontSize: 18,
-                    fontWeight: FontWeight.w500,
-                  ),
+                  style: AppWidget.SimpleTextFieldStyle(),
                 ),
               ),
-              SizedBox(height: 130),
+              SizedBox(height: 40),
               Material(
                 elevation: 3.0,
                 borderRadius: BorderRadius.circular(20),
@@ -55,15 +49,15 @@ class _OnboardingState extends State<Onboarding> {
                   height: 60,
                   width: MediaQuery.of(context).size.width / 2,
                   decoration: BoxDecoration(
-                    color: Color(0xffff734c),
+                    color: Color(0xff8c592a),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Center(
                     child: Text(
-                      'Next',
+                      'Get Started',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 24,
+                        fontSize: 20,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
